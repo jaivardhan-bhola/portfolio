@@ -1,6 +1,6 @@
 .footer {
-  background-color: $dark-grey;
-  color: $white-color;
+  background-color: $tertiary1;
+  color: $background;
   padding: 4.8rem 0;
 
   @include respond(phone) {
@@ -8,15 +8,15 @@
   }
 
   &__text {
-    color: darken($white-color, 50%);
+    color: darken($text, 50%);
     font-size: 1.3rem;
 
     a {
-      color: darken($white-color, 50%);
+      color: darken($text, 50%);
       font-size: 1.3rem;
       transition: all 0.4s;
       display: inline-block;
-      background-color: $dark-grey;
+      background-color: $tertiary1;
 
       &:hover,
       &:active {
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: $white-color;
+    color: $background;
     font-size: 3rem;
     width: 5rem;
     height: 5rem;
@@ -58,7 +58,7 @@
 }
 
 .back-to-top i {
-  color: $white-color;
+  color: $background;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
 
