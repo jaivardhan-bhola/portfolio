@@ -21,8 +21,7 @@
   }
 }
 
-/* Hero Style */
-.cta-btn--hero {
+.cta-btn--portfolio {
   @include supportColorForIE11();
   border: 2px solid transparent;
   border-image: linear-gradient(
@@ -69,26 +68,6 @@
     }
   }
 }
-
-/* Resume Style */
-.cta-btn--resume {
-  color: $background;
-  border: 2px solid $background;
-
-  &::after {
-    background: $background;
-  }
-
-  &:hover {
-    color: $secondary-color;
-    text-decoration: none;
-
-    &::after {
-      width: 100%;
-    }
-  }
-}
-
 /* Arrow Button */
 .up i {
   color: #272727;
