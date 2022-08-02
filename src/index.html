@@ -60,7 +60,13 @@
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
-              <video autoPlay loop>
+              <script>
+                function playVideo()
+                  {
+                      document.getElementById("vid").play();
+                  }
+              </script>
+              <video id = "vid" loop>
                 <source src="assets/laptop.mp4" type="video/mp4">
               </video>
             </div>
