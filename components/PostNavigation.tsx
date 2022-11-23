@@ -1,4 +1,8 @@
 import Link from 'next/link'
+interface PostNavigationProps {
+    prev?: null
+    next?: null
+  }
 
 export default function PostNavigation({ prev, next }: PostNavigationProps) {
     return (
