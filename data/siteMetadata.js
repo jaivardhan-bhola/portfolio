@@ -1,11 +1,11 @@
 const siteMetadata = {
   title: 'Jaivardhan Bhola',
   author: 'Jaivardhan Bhola',
-  headerTitle: 'dalelarroder',
-  description: 'Software Engineer at Aphex',
+  headerTitle: 'jaivardhanbhola',
+  description: 'Student',
   language: 'en-us',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://dalelarroder.com',
+  siteUrl: 'https://jaivardhan.netlify.app',
   siteRepo: 'https://github.com/jaivardhan-bhola/portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.webp',
