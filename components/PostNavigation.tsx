@@ -1,9 +1,11 @@
 import Link from 'next/link'
-interface PostNavigationProps {
-    prev?: null
-    next?: null
-  }
 
+type BlogLink = { slug: string; title: string }
+interface PostNavigationProps {
+    prev?: BlogLink
+    next?: BlogLink
+  }
+  
 export default function PostNavigation({ prev, next }: PostNavigationProps) {
     return (
       <div className="grid grid-rows-2 sm:grid-cols-2 gap-3 pt-4 sm:pt-6">
