@@ -65,6 +65,7 @@ module.exports = withContentlayer(
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
       dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
+      ignoreDuringBuilds: true,
     },
     async headers() {
       return [
