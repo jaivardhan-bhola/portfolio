@@ -1,5 +1,11 @@
 const projectsData = [
   {
+    title: 'DocChain',
+    description: 'Connecting the Healthcare Community, One Patient At A Time',
+    imgSrc: '/static/images/project/DocChain.png',
+    href: 'https://github.com/jaivardhan-bhola/DocChain',
+  },
+  {
     title: 'Keyper',
     description: `Password vault with encryption using Python`,
     imgSrc: '/static/images/project/Keyper.png',
@@ -34,7 +40,7 @@ const projectsData = [
     description: 'Desktop Timer using Python',
     imgSrc: '/static/images/project/python-desktop-timer.png',
     href: 'https://github.com/jaivardhan-bhola/python-desktop-timer',
-  }
+  },
 ]
 
 export default projectsData
