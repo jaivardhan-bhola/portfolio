@@ -26,7 +26,7 @@ export default function Hero(): ReactElement {
   return (
     <div>
       <h1 className="sr-only">
-        Hello I'm Jaivardhan Bhola, I'm a software engineer, and I love building things for the web.
+        Hello I'm Jaivardhan Bhola, I build desktop and web apps.
       </h1>
       <motion.div
         className="relative z-10 flex h-[calc(100vh-81px)] md:h-[calc(100vh-116px)] items-center"
