@@ -20,6 +20,15 @@ export const workTiles: WorkTile[] = [
   },
   {
     description: 'I built',
+    title: 'SunSeer',
+    image: {
+      src: '/static/images/4.webp',
+      width: 600,
+      height: 554,
+    },
+  },
+  {
+    description: 'I built',
     title: 'Keyper',
     image: {
       src: '/static/images/2.webp',

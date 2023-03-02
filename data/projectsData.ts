@@ -1,5 +1,11 @@
 const projectsData = [
   {
+    title: 'SunSeer',
+    description: 'Weather Forecasting App',
+    imgSrc: '/static/images/project/SunSeer.png',
+    href: 'https://github.com/jaivardhan-bhola/SunSeer',
+  },
+  {
     title: 'DocChain',
     description: 'Connecting the Healthcare Community, One Patient At A Time',
     imgSrc: '/static/images/project/DocChain.png',
