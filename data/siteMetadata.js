@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: 'jaivardhanbhola',
   description: 'Student',
   language: 'en-us',
-  theme: 'dark', // system, dark or light
+  theme: 'system',
   siteUrl: 'https://jaivardhan.netlify.app',
   siteRepo: 'https://github.com/jaivardhan-bhola/portfolio',
   siteLogo: '/static/images/logo.png',
