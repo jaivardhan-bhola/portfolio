@@ -14,9 +14,9 @@ const siteMetadata = {
   github: 'https://github.com/jaivardhan-bhola',
   twitter: 'https://twitter.com/BholaJaivardhan',
   linkedin: 'https://www.linkedin.com/in/jaivardhan-bhola-773944214/',
-  AppleMusic: 'https://music.apple.com/us/profile/jaivardhanb?ls',
+  Spotify: 'https://open.spotify.com/user/31kuxjny2gf6w3vxqoibf6qwzld4',
   medium: 'https://medium.com/@jaivardhan.bhola',
-  discord: 'https://discord.com/users/1042847574417231902',
+  discord: 'https://discordapp.com/users/1047930956809502802',
   instagram: 'https://www.instagram.com/jaivardhan_b/',
   locale: 'en-US',
   comment: {

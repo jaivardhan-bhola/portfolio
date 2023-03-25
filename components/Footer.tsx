@@ -1,8 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import Link from 'next/link'
 import { AiFillLinkedin } from 'react-icons/ai'
-import { FaGithub,FaMedium, FaTwitter, FaDiscord, FaInstagram} from 'react-icons/fa'
-import { SiApplemusic} from 'react-icons/si'
+import { FaGithub,FaMedium, FaTwitter, FaDiscord, FaInstagram, FaSpotify} from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -53,8 +52,8 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href={siteMetadata.AppleMusic} target="_blank" rel="noreferrer" aria-label="appleMusic">
-                <SiApplemusic className="sm:text-lg" />
+              <a href={siteMetadata.Spotify} target="_blank" rel="noreferrer" aria-label="Spotify">
+                <FaSpotify className="sm:text-lg" />
               </a>
             </li>
           </ul>
