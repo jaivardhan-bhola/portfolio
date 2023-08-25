@@ -1,5 +1,11 @@
 const projectsData = [
   {
+    title: 'Serenova',
+    description: 'Your mental well-being companion',
+    imgSrc: '/static/images/project/Serenova.png',
+    href: 'https://github.com/jaivardhan-bhola/Serenova',
+  },
+  {
     title: 'SunSeer',
     description: 'Weather Forecasting App',
     imgSrc: '/static/images/project/SunSeer.png',

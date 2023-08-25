@@ -16,7 +16,6 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com/in/jaivardhan-bhola-773944214/',
   Spotify: 'https://open.spotify.com/user/31kuxjny2gf6w3vxqoibf6qwzld4',
   medium: 'https://medium.com/@jaivardhan.bhola',
-  discord: 'https://discordapp.com/users/1047930956809502802',
   instagram: 'https://www.instagram.com/jaivardhan_b/',
   locale: 'en-US',
   comment: {

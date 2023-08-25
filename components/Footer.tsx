@@ -42,11 +42,6 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href={siteMetadata.discord} target="_blank" rel="noreferrer" aria-label="discord">
-                <FaDiscord className="sm:text-lg" />
-              </a>
-            </li>
-            <li>
               <a href={siteMetadata.twitter} target="_blank" rel="noreferrer" aria-label="twitter">
                 <FaTwitter className="sm:text-lg" />
               </a>
