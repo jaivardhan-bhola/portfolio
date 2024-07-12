@@ -1,5 +1,23 @@
 const projectsData = [
   {
+    title: 'Vitalize',
+    description: 'Empowering Healthcare Access',
+    imgSrc: '/static/images/project/Vitalize.png',
+    href: 'https://github.com/jaivardhan-bhola/Vitalize',
+  },
+  {
+    title: 'AgroSnap',
+    description: 'Empowering Agriculture, One Snap at a Time',
+    imgSrc: '/static/images/project/AgroSnap.png',
+    href: 'https://github.com/jaivardhan-bhola/AgroSnap',
+  },
+  {
+    title: 'UniRide',
+    description: 'Connecting Commutes, One Journey at a Time',
+    imgSrc: '/static/images/project/UniRide.png',
+    href: 'https://github.com/jaivardhan-bhola/UniRide',
+  },
+  {
     title: 'Serenova',
     description: 'Your mental well-being companion',
     imgSrc: '/static/images/project/Serenova.png',

@@ -1,7 +1,8 @@
 import siteMetadata from '@/data/siteMetadata'
 import Link from 'next/link'
 import { AiFillLinkedin } from 'react-icons/ai'
-import { FaGithub,FaMedium, FaTwitter, FaDiscord, FaInstagram, FaSpotify} from 'react-icons/fa'
+import { FaGithub, FaMedium, FaInstagram, FaSpotify } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 
 export default function Footer() {
   return (
@@ -37,13 +38,18 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href={siteMetadata.instagram} target="_blank" rel="noreferrer" aria-label="instagram">
+              <a
+                href={siteMetadata.instagram}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="instagram"
+              >
                 <FaInstagram className="sm:text-lg" />
               </a>
             </li>
             <li>
               <a href={siteMetadata.twitter} target="_blank" rel="noreferrer" aria-label="twitter">
-                <FaTwitter className="sm:text-lg" />
+                <FaXTwitter className="sm:text-lg" />
               </a>
             </li>
             <li>

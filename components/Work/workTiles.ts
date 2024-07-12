@@ -10,6 +10,15 @@ export type WorkTile = {
 
 export const workTiles: WorkTile[] = [
   {
+    description: '',
+    title: 'Tech Stack',
+    image: {
+      src: '/static/images/skills.png',
+      width: 600,
+      height: 554,
+    },
+  },
+  {
     description: `Here is`,
     title: `what I've been up to`,
     image: {
@@ -20,29 +29,20 @@ export const workTiles: WorkTile[] = [
   },
   {
     description: 'I built',
-    title: 'Serenova',
+    title: 'Vitalize',
     image: {
-      src: '/static/images/5.webp',
+      src: '/static/images/5.gif',
       width: 600,
       height: 554,
     },
   },
   {
     description: 'I built',
-    title: 'SunSeer',
+    title: 'UniRide',
     image: {
-      src: '/static/images/4.webp',
+      src: '/static/images/4.gif',
       width: 600,
       height: 554,
-    },
-  },
-  {
-    description: 'I started',
-    title: 'Blogging on Medium',
-    image: {
-      src: '/static/images/3.webp',
-      width: 600,
-      height: 717,
     },
   },
 ]

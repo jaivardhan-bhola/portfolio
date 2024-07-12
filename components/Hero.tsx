@@ -25,9 +25,7 @@ export default function Hero(): ReactElement {
 
   return (
     <div>
-      <h1 className="sr-only">
-        Hello I'm Jaivardhan Bhola, I build desktop and web apps.
-      </h1>
+      <h1 className="sr-only">Hello I'm Jaivardhan Bhola, I build desktop and web apps.</h1>
       <motion.div
         className="relative z-10 flex h-[calc(100vh-81px)] md:h-[calc(100vh-116px)] items-center"
         animate={{
@@ -46,7 +44,7 @@ export default function Hero(): ReactElement {
                 </FadeUp>
                 <FadeUp duration={0.6} delay={0.2}>
                   <h2 className="font-medium opacity-80 text-3xl sm:text-6xl md:text-6xl xl:text-7xl">
-                    I build desktop and web apps.
+                    I build android and web apps.
                   </h2>
                 </FadeUp>
                 <FadeRight duration={0.5} delay={0.8}>
