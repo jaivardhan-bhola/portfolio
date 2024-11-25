@@ -1,0 +1,37 @@
+[
+    {
+        "title": "TantraFiesta 2k24",
+        "description": "The official app of TantraFiesta 2024",
+        "cover": "https://raw.githubusercontent.com/jaivardhan-bhola/tf/refs/heads/main/cover.png",
+        "href": "https://github.com/jaivardhan-bhola/tf",
+        "img" : "https://raw.githubusercontent.com/jaivardhan-bhola/tf/refs/heads/main/assets/Logo.png"
+    },
+    {
+        "title": "Moneta",
+        "description": "Smarter Finance, Brighter Future",
+        "cover": "https://raw.githubusercontent.com/jaivardhan-bhola/moneta/refs/heads/main/assets/cover.png",
+        "href": "https://github.com/jaivardhan-bhola/moneta",
+        "img": "https://raw.githubusercontent.com/jaivardhan-bhola/moneta/refs/heads/main/assets/Logo.png"
+    },
+    {
+        "title": "Vitalize",
+        "description": "Empowering Healthcare Access",
+        "cover": "https://raw.githubusercontent.com/jaivardhan-bhola/Vitalize/refs/heads/main/assets/cover.png",
+        "href": "https://github.com/jaivardhan-bhola/Vitalize",
+        "img": "https://raw.githubusercontent.com/jaivardhan-bhola/Vitalize/refs/heads/main/assets/Logo.png"
+    },
+    {
+        "title": "AgroSnap",
+        "description": "Empowering Agriculture, One Snap at a Time",
+        "cover": "https://raw.githubusercontent.com/jaivardhan-bhola/AgroSnap/refs/heads/master/assets/cover.png",
+        "href": "https://github.com/jaivardhan-bhola/AgroSnap",
+        "img": "https://raw.githubusercontent.com/jaivardhan-bhola/AgroSnap/refs/heads/master/assets/Logo.png"
+    },
+    {
+        "title": "UniRide",
+        "description": "Connecting Commutes, One Journey at a Time",
+        "cover": "https://raw.githubusercontent.com/jaivardhan-bhola/UniRide/refs/heads/main/assets/cover.png",
+        "href": "https://github.com/jaivardhan-bhola/UniRide",
+        "img": "https://raw.githubusercontent.com/jaivardhan-bhola/UniRide/refs/heads/main/assets/Logo.png"
+    }
+]
