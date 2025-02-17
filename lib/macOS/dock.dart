@@ -84,7 +84,7 @@ class _DockState extends State<Dock> {
         'imgSrc': '/icons/acrobat',
         'onPressed': () {
           html.window.open(
-              'https://drive.google.com/file/d/1O5AsYAYb-9n85AcIYHQ3L9VcboifSrKp/view?usp=sharing',
+              'https://drive.google.com/file/d/18rltwqG_Tm2paUyemvSNF4HRClGZoYQO/view?usp=sharing',
               'new tab');
         },
       },

@@ -53,7 +53,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                       child: Column(
                         children: [
                           Image(
-                            image: const AssetImage('assets/icons/projects.png'),
+                            image:
+                                const AssetImage('assets/icons/projects.png'),
                             width: Screenwidth * 0.03,
                           ),
                           SizedBox(
@@ -100,7 +101,7 @@ class _WindowsHomeState extends State<WindowsHome> {
                     ),
                     GestureDetector(
                       onTap: () => html.window.open(
-                          'https://drive.google.com/file/d/1O5AsYAYb-9n85AcIYHQ3L9VcboifSrKp/view?usp=sharing',
+                          'https://drive.google.com/file/d/18rltwqG_Tm2paUyemvSNF4HRClGZoYQO/view?usp=sharing',
                           'new tab'),
                       child: Column(
                         children: [
@@ -130,7 +131,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                       child: Column(
                         children: [
                           Image(
-                            image: const AssetImage('assets/icons/linkedin.png'),
+                            image:
+                                const AssetImage('assets/icons/linkedin.png'),
                             width: Screenwidth * 0.03,
                           ),
                           SizedBox(
@@ -160,7 +162,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                       child: Column(
                         children: [
                           Image(
-                            image: const AssetImage('assets/windows/fullscreen.png'),
+                            image: const AssetImage(
+                                'assets/windows/fullscreen.png'),
                             width: Screenwidth * 0.03,
                           ),
                           SizedBox(
@@ -185,7 +188,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                       onTap: () => {
                         Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(builder: (context) => const MacEntry()),
+                          MaterialPageRoute(
+                              builder: (context) => const MacEntry()),
                         ),
                       },
                       child: Column(
@@ -239,7 +243,7 @@ class _WindowsHomeState extends State<WindowsHome> {
                             ),
                             IconButton(
                               onPressed: () => html.window.open(
-                                  'https://drive.google.com/file/d/1O5AsYAYb-9n85AcIYHQ3L9VcboifSrKp/view?usp=sharing',
+                                  'https://drive.google.com/file/d/18rltwqG_Tm2paUyemvSNF4HRClGZoYQO/view?usp=sharing',
                                   'new tab'),
                               icon: Image.asset(
                                 'assets/icons/acrobat.png',
@@ -334,8 +338,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                         'https://www.github.com/jaivardhan-bhola',
                                         'new tab'),
                                     child: Image(
-                                      image:
-                                          const AssetImage('assets/icons/github.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/github.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -400,7 +404,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     onTap: () => html.window
                                         .open('https://isocpp.org/', 'new tab'),
                                     child: Image(
-                                      image: const AssetImage('assets/icons/cpp.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/cpp.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -410,8 +415,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                         'https://developer.mozilla.org/en-US/docs/Web/HTML',
                                         'new tab'),
                                     child: Image(
-                                      image:
-                                          const AssetImage('assets/icons/html.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/html.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -421,7 +426,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                         'https://developer.mozilla.org/en-US/docs/Web/CSS',
                                         'new tab'),
                                     child: Image(
-                                      image: const AssetImage('assets/icons/css.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/css.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -457,8 +463,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     onTap: () => html.window.open(
                                         'https://www.java.com/', 'new tab'),
                                     child: Image(
-                                      image:
-                                          const AssetImage('assets/icons/java.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/java.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -467,8 +473,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     onTap: () => html.window.open(
                                         'https://www.python.org/', 'new tab'),
                                     child: Image(
-                                      image:
-                                          const AssetImage('assets/icons/python.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/python.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -477,7 +483,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     onTap: () => html.window
                                         .open('https://golang.org/', 'new tab'),
                                     child: Image(
-                                      image: const AssetImage('assets/icons/go.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/go.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -497,8 +504,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     onTap: () => html.window.open(
                                         'https://www.mysql.com/', 'new tab'),
                                     child: Image(
-                                      image:
-                                          const AssetImage('assets/icons/mysql.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/mysql.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -507,8 +514,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     onTap: () => html.window.open(
                                         'https://www.sqlite.org/', 'new tab'),
                                     child: Image(
-                                      image:
-                                          const AssetImage('assets/icons/sqlite.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/sqlite.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -522,8 +529,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     onTap: () => html.window
                                         .open('https://nextjs.org/', 'new tab'),
                                     child: Image(
-                                      image:
-                                          const AssetImage('assets/icons/nextjs.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/nextjs.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),
@@ -552,8 +559,8 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     onTap: () => html.window.open(
                                         'https://www.docker.com/', 'new tab'),
                                     child: Image(
-                                      image:
-                                          const AssetImage('assets/icons/docker.png'),
+                                      image: const AssetImage(
+                                          'assets/icons/docker.png'),
                                       width: Screenwidth * 0.03,
                                     ),
                                   ),

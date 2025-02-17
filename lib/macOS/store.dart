@@ -353,12 +353,14 @@ class _MacStoreState extends State<MacStore> {
                                               child: CircleAvatar(
                                                 radius: screenHeight * 0.04,
                                                 backgroundColor: Colors.white,
-                                                child: Image(
-                                                  image: NetworkImage(
-                                                      _projects[index]['img']),
-                                                  width: Screenwidth * 0.05,
-                                                  height: screenHeight * 0.05,
-                                                  fit: BoxFit.fitHeight,
+                                                child: ClipOval(
+                                                  child: Image(
+                                                    image: NetworkImage(
+                                                        _projects[index]['img']),
+                                                    width: screenHeight * 0.05,
+                                                    height: screenHeight * 0.05,
+                                                    fit: BoxFit.cover,
+                                                  ),
                                                 ),
                                               ),
                                             ),

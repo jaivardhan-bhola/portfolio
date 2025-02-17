@@ -339,12 +339,14 @@ class _WindowsStoreState extends State<WindowsStore> {
                                               child: CircleAvatar(
                                                 radius: screenHeight * 0.04,
                                                 backgroundColor: Colors.white,
-                                                child: Image(
-                                                  image: NetworkImage(
-                                                      _projects[index]['img']),
-                                                  width: screenWidth * 0.05,
-                                                  height: screenHeight * 0.05,
-                                                  fit: BoxFit.fitHeight,
+                                                child: ClipOval(
+                                                  child: Image(
+                                                    image: NetworkImage(
+                                                        _projects[index]['img']),
+                                                    width: screenHeight * 0.05,
+                                                    height: screenHeight * 0.05,
+                                                    fit: BoxFit.cover,
+                                                  ),
                                                 ),
                                               ),
                                             ),

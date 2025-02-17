@@ -621,7 +621,7 @@ class _MacHomeState extends State<MacHome> {
                   ),
                   GestureDetector(
                     onTap: () => html.window.open(
-                        'https://drive.google.com/file/d/1O5AsYAYb-9n85AcIYHQ3L9VcboifSrKp/view?usp=sharing',
+                        'https://drive.google.com/file/d/18rltwqG_Tm2paUyemvSNF4HRClGZoYQO/view?usp=sharing',
                         'new tab'),
                     child: Column(
                       children: [
