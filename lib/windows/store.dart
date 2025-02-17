@@ -22,8 +22,8 @@ class _WindowsStoreState extends State<WindowsStore> {
         await rootBundle.loadString('assets/data/projects.json');
     final data = await json.decode(response);
     for (var i = 0; i < data.length; i++) {
-      await precacheImage(NetworkImage(data[i]['img']), context);
-      await precacheImage(NetworkImage(data[i]['cover']), context);
+      await precacheImage(AssetImage(data[i]['img']), context);
+      await precacheImage(AssetImage(data[i]['cover']), context);
     }
     setState(() {
       _projects = data;
@@ -135,7 +135,7 @@ class _WindowsStoreState extends State<WindowsStore> {
                                                             screenHeight *
                                                                 0.02),
                                                     child: Image(
-                                                      image: NetworkImage(
+                                                      image: AssetImage(
                                                           _projects[i]
                                                               ['cover']),
                                                       height:
@@ -341,7 +341,7 @@ class _WindowsStoreState extends State<WindowsStore> {
                                                 backgroundColor: Colors.white,
                                                 child: ClipOval(
                                                   child: Image(
-                                                    image: NetworkImage(
+                                                    image: AssetImage(
                                                         _projects[index]['img']),
                                                     width: screenHeight * 0.05,
                                                     height: screenHeight * 0.05,
