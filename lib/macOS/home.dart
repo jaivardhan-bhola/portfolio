@@ -670,9 +670,8 @@ class _MacHomeState extends State<MacHome> {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () => html.window.open(
-                        'https://notably.jaivardhan.codes/',
-                        'new tab'),
+                    onTap: () =>
+                        html.window.open('https://notablyai.me/', 'new tab'),
                     child: Column(
                       children: [
                         Image(

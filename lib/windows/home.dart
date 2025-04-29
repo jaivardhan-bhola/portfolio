@@ -151,14 +151,12 @@ class _WindowsHomeState extends State<WindowsHome> {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => html.window.open(
-                          'https://notably.jaivardhan.codes',
-                          'new tab'),
+                      onTap: () =>
+                          html.window.open('https://notablyai.me/', 'new tab'),
                       child: Column(
                         children: [
                           Image(
-                            image: const AssetImage(
-                                'assets/icons/notably.png'),
+                            image: const AssetImage('assets/icons/notably.png'),
                             width: Screenwidth * 0.03,
                           ),
                           SizedBox(
@@ -302,7 +300,6 @@ class _WindowsHomeState extends State<WindowsHome> {
                             SizedBox(
                               width: Screenwidth * 0.009,
                             ),
-
                           ],
                         ),
                         const Spacer(),
