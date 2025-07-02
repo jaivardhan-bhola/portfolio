@@ -669,31 +669,7 @@ class _MacHomeState extends State<MacHome> {
                       ],
                     ),
                   ),
-                  GestureDetector(
-                    onTap: () =>
-                        html.window.open('https://notablyai.me/', 'new tab'),
-                    child: Column(
-                      children: [
-                        Image(
-                          image: const AssetImage('assets/icons/notably.png'),
-                          width: Screenwidth * 0.03,
-                        ),
-                        SizedBox(
-                          height: Screenheight * 0.005,
-                        ),
-                        Text(
-                          'Notably',
-                          style: GoogleFonts.poppins(
-                              color: Colors.white,
-                              fontSize: Screenheight * 0.02),
-                        ),
-                        SizedBox(
-                          height: Screenheight * 0.02,
-                        ),
-                      ],
-                    ),
-                  ),
-                  GestureDetector(
+                 GestureDetector(
                     onTap: () => {
                       setState(() {
                         _isfullscreen = !_isfullscreen;
