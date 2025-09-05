@@ -29,7 +29,7 @@ class _MacHomeState extends State<MacHome> {
           width: double.infinity,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/mac/bg.png'),
+              image: AssetImage('assets/mac/bg_optimized.jpg'),
               fit: BoxFit.cover,
             ),
           ),

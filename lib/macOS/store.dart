@@ -6,6 +6,7 @@ import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/utils/image_utils.dart';
 
 class MacStore extends StatefulWidget {
   final String active;
@@ -19,17 +20,32 @@ class MacStore extends StatefulWidget {
 class _MacStoreState extends State<MacStore> {
   List<dynamic> _projects = [];
   bool _isLoading = true;
+  int _loadedImages = 0;
+  int _totalImages = 0;
 
   Future<void> _loadProjects() async {
     final String response =
         await rootBundle.loadString('assets/data/projects.json');
     final data = await json.decode(response);
-    for (var i = 0; i < data.length; i++) {
-      await precacheImage(AssetImage(data[i]['img']), context);
-      await precacheImage(AssetImage(data[i]['cover']), context);
-    }
     setState(() {
       _projects = data;
+      _totalImages = data.length * 2; // Each project has img and cover
+    });
+    
+    // Load images in parallel with progress tracking
+    final List<Future<void>> futures = [];
+    for (var i = 0; i < data.length; i++) {
+      futures.add(_precacheImageWithProgress(AssetImage(data[i]['img'])));
+      futures.add(_precacheImageWithProgress(AssetImage(data[i]['cover'])));
+    }
+    
+    await Future.wait(futures);
+  }
+
+  Future<void> _precacheImageWithProgress(AssetImage image) async {
+    await ImageUtils.precacheImageSafe(image, context);
+    setState(() {
+      _loadedImages++;
     });
   }
 
@@ -106,11 +122,39 @@ class _MacStoreState extends State<MacStore> {
                           const CupertinoActivityIndicator(),
                           SizedBox(height: screenHeight * 0.01),
                           Text(
-                            "Loading...",
+                            "Loading Projects...",
                             style: GoogleFonts.poppins(
-                                color: Colors.white10,
+                                color: Colors.white,
                                 fontSize: screenHeight * 0.02),
                           ),
+                          if (_totalImages > 0) ...[
+                            SizedBox(height: screenHeight * 0.01),
+                            Container(
+                              width: Screenwidth * 0.3,
+                              height: screenHeight * 0.005,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(screenHeight * 0.0025),
+                                color: Colors.grey[700],
+                              ),
+                              child: FractionallySizedBox(
+                                alignment: Alignment.centerLeft,
+                                widthFactor: _loadedImages / _totalImages,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(screenHeight * 0.0025),
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: screenHeight * 0.005),
+                            Text(
+                              "${_loadedImages}/${_totalImages} images loaded",
+                              style: GoogleFonts.poppins(
+                                  color: Colors.white60,
+                                  fontSize: screenHeight * 0.015),
+                            ),
+                          ],
                         ],
                       )
                     : Expanded(

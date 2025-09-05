@@ -2,50 +2,50 @@
     {
         "title": "Pagio",
         "description": "AI-powered Note-taking & Productivity App",
-        "cover": "assets/covers/Pagio.png",
+        "cover": "assets/covers/Pagio_optimized.jpg",
         "href": "https://github.com/jaivardhan-bhola/notably-landing",
-        "img": "assets/logos/Pagio.png"
+        "img": "assets/logos/Pagio_optimized.png"
     },
     {
         "title": "Trust Quotes and Sayings",
         "description": "Inspire. Share. Believe.",
-        "cover": "assets/covers/Trust-Quotes-and-Sayings.png",
+        "cover": "assets/covers/Trust-Quotes-and-Sayings_optimized.jpg",
         "href": "https://play.google.com/store/apps/details?id=com.tangoquotes.trustquotes",
-        "img": "assets/logos/Trust-Quotes-and-Sayings.png"
+        "img": "assets/logos/Trust-Quotes-and-Sayings_optimized.png"
     },
     {
         "title": "TantraFiesta 2k24",
         "description": "The official app of TantraFiesta 2024",
-        "cover": "assets/covers/TantraFiesta-2k24.png",
+        "cover": "assets/covers/TantraFiesta-2k24_optimized.jpg",
         "href": "https://github.com/jaivardhan-bhola/tf",
-        "img" : "assets/logos/TantraFiesta-2k24.png"
+        "img" : "assets/logos/TantraFiesta-2k24_optimized.png"
     },
     {
         "title": "Moneta",
         "description": "Smarter Finance, Brighter Future",
-        "cover": "assets/covers/Moneta.png",
+        "cover": "assets/covers/Moneta_optimized.jpg",
         "href": "https://github.com/jaivardhan-bhola/moneta",
-        "img": "assets/logos/Moneta.png"
+        "img": "assets/logos/Moneta_optimized.png"
     },
     {
         "title": "Vitalize",
         "description": "Empowering Healthcare Access",
-        "cover": "assets/covers/Vitalize.png",
+        "cover": "assets/covers/Vitalize_optimized.jpg",
         "href": "https://github.com/jaivardhan-bhola/Vitalize",
-        "img": "assets/logos/Vitalize.png"
+        "img": "assets/logos/Vitalize_optimized.png"
     },
     {
         "title": "AgroSnap",
         "description": "Empowering Agriculture, One Snap at a Time",
-        "cover": "assets/covers/AgroSnap.png",
+        "cover": "assets/covers/AgroSnap_optimized.jpg",
         "href": "https://github.com/jaivardhan-bhola/AgroSnap",
-        "img": "assets/logos/AgroSnap.png"
+        "img": "assets/logos/AgroSnap_optimized.png"
     },
     {
         "title": "UniRide",
         "description": "Connecting Commutes, One Journey at a Time",
-        "cover": "assets/covers/UniRide.png",
+        "cover": "assets/covers/UniRide_optimized.jpg",
         "href": "https://github.com/jaivardhan-bhola/UniRide",
-        "img": "assets/logos/UniRide.png"
+        "img": "assets/logos/UniRide_optimized.png"
     }
 ]
