@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/macOS/home.dart';
+import 'package:portfolio/utils/image_utils.dart';
 
 
 class MacEntry extends StatefulWidget {
@@ -20,12 +21,6 @@ class _MacEntryState extends State<MacEntry> {
   }
 
   Future<void> _initializeApp() async {
-    // Start background image preloading immediately
-    final backgroundFuture = precacheImage(
-      const AssetImage('assets/mac/bg_optimized.jpg'), 
-      context
-    );
-    
     // Start the fade out animation
     Future.delayed(const Duration(milliseconds: 0), () {
       setState(() {
@@ -34,7 +29,10 @@ class _MacEntryState extends State<MacEntry> {
     });
 
     // Wait for background to load
-    await backgroundFuture;
+    await ImageUtils.precacheImageSafe(
+      const AssetImage('assets/mac/bg_optimized.jpg'), 
+      context
+    );
     setState(() {
       _backgroundLoaded = true;
     });

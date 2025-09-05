@@ -6,6 +6,7 @@ import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/utils/image_utils.dart';
 
 class MacStore extends StatefulWidget {
   final String active;
@@ -42,7 +43,7 @@ class _MacStoreState extends State<MacStore> {
   }
 
   Future<void> _precacheImageWithProgress(AssetImage image) async {
-    await precacheImage(image, context);
+    await ImageUtils.precacheImageSafe(image, context);
     setState(() {
       _loadedImages++;
     });
