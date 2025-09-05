@@ -11,22 +11,43 @@ class MacEntry extends StatefulWidget {
 
 class _MacEntryState extends State<MacEntry> {
   bool _isVisible = true;
+  bool _backgroundLoaded = false;
 
   @override
   void initState() {
     super.initState();
+    _initializeApp();
+  }
+
+  Future<void> _initializeApp() async {
+    // Start background image preloading immediately
+    final backgroundFuture = precacheImage(
+      const AssetImage('assets/mac/bg_optimized.jpg'), 
+      context
+    );
+    
+    // Start the fade out animation
     Future.delayed(const Duration(milliseconds: 0), () {
       setState(() {
         _isVisible = false;
       });
-      precacheImage(const AssetImage('assets/mac/bg.png'), context);
-      Future.delayed(const Duration(milliseconds: 500), () {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const MacHome()),
-        );
-      });
     });
+
+    // Wait for background to load
+    await backgroundFuture;
+    setState(() {
+      _backgroundLoaded = true;
+    });
+
+    // Small delay to ensure smooth transition
+    await Future.delayed(const Duration(milliseconds: 300));
+    
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const MacHome()),
+      );
+    }
   }
 
   @override
@@ -41,10 +62,26 @@ class _MacEntryState extends State<MacEntry> {
           width: double.infinity,
           color: Colors.black,
           child: Center(
-            child: Image.asset(
-              'assets/mac/logo.png',
-              height: MediaQuery.of(context).size.height * 0.15,
-              width: MediaQuery.of(context).size.width * 0.15,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'assets/mac/logo.png',
+                  height: MediaQuery.of(context).size.height * 0.15,
+                  width: MediaQuery.of(context).size.width * 0.15,
+                ),
+                if (!_backgroundLoaded) ...[
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+                  const SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: Colors.white54,
+                    ),
+                  ),
+                ],
+              ],
             ),
           ),
         ),
