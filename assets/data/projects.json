@@ -1,5 +1,12 @@
 [
     {
+        "title": "Pagio",
+        "description": "AI-powered Note-taking & Productivity App",
+        "cover": "assets/covers/Pagio.png",
+        "href": "https://github.com/jaivardhan-bhola/notably-landing",
+        "img": "assets/logos/Pagio.png"
+    },
+    {
         "title": "Trust Quotes and Sayings",
         "description": "Inspire. Share. Believe.",
         "cover": "assets/covers/Trust-Quotes-and-Sayings.png",
