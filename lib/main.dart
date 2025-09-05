@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:portfolio/macOS/entry.dart';
 import 'package:portfolio/windows/entry.dart';
+import 'package:portfolio/platform_detector.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: defaultTargetPlatform == TargetPlatform.macOS
+      body: isMacOSPlatform()
             ? const MacEntry()
             : const WindowsEntry(),
     );
