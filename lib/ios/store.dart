@@ -227,9 +227,7 @@ class _IosStoreState extends State<IosStore> {
           borderRadius: BorderRadius.circular(24),
           image: DecorationImage(
             image: AssetImage(
-              project.icon.isEmpty
-                  ? 'assets/mac/bg_ios.png'
-                  : project.icon,
+              project.icon.isEmpty ? 'assets/mac/bg_ios.png' : project.icon,
             ),
             fit: BoxFit.cover,
           ),

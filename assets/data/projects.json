@@ -1,5 +1,25 @@
 [
     {
+        "title": "Neurema",
+        "description": "Neuroscientific Study Companion | Backend, APIs, Async",
+        "cover": "assets/covers/Neurema_optimized.jpg",
+        "href": "https://www.neurema.com/",
+        "img": "assets/logos/Neurema_optimized.png",
+        "category": "Education",
+        "featured": true,
+        "badge": "Editor's Choice"
+    },
+    {
+        "title": "SmartAqua",
+        "description": "IoT Water Purifier App | IoT, Backend, Realtime",
+        "cover": "assets/covers/SmartAqua_optimized.jpg",
+        "href": "https://play.google.com/store/apps/details?id=com.trubotics.smartaqua",
+        "img": "assets/logos/SmartAqua_optimized.png",
+        "category": "IoT",
+        "featured": true,
+        "badge": "Featured"
+    },
+    {
         "title": "Pagio",
         "description": "AI-powered Note-taking & Productivity App",
         "cover": "assets/covers/Pagio_optimized.jpg",
