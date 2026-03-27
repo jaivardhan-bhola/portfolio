@@ -1,7 +1,7 @@
 [
     {
         "title": "Neurema",
-        "description": "Neuroscientific Study Companion | Backend, APIs, Async",
+        "description": "Train your brain to remember more, focus better, and study smarter",
         "cover": "assets/covers/Neurema_optimized.jpg",
         "href": "https://www.neurema.com/",
         "img": "assets/logos/Neurema_optimized.png",
@@ -11,7 +11,7 @@
     },
     {
         "title": "SmartAqua",
-        "description": "IoT Water Purifier App | IoT, Backend, Realtime",
+        "description": "IoT-enabled water purifier with simple monthly subscription",
         "cover": "assets/covers/SmartAqua_optimized.jpg",
         "href": "https://play.google.com/store/apps/details?id=com.trubotics.smartaqua",
         "img": "assets/logos/SmartAqua_optimized.png",
