@@ -1,13 +1,15 @@
 #!/bin/sh
 set -e
 
+FLUTTER_VERSION=3.27.4
+
 if [ -d flutter ]; then
   cd flutter
-  git fetch --depth 1 origin stable
-  git checkout stable
+  git fetch --depth 1 origin tag "$FLUTTER_VERSION"
+  git checkout -f "$FLUTTER_VERSION"
   cd ..
 else
-  git clone --depth 1 --branch stable https://github.com/flutter/flutter.git
+  git clone --depth 1 --branch "$FLUTTER_VERSION" https://github.com/flutter/flutter.git
 fi
 
 ./flutter/bin/flutter config --enable-web
