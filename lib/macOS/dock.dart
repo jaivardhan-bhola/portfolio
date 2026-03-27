@@ -96,7 +96,7 @@ class _DockState extends State<Dock> {
         },
       },
       {
-        'imgSrc': '/icons/projects',
+        'imgSrc': 'mac/store',
         'onPressed': () async {
           widget.onActiveChanged('Projects');
           await showDialog(

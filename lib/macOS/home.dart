@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:html' as html;
 import 'package:intl/intl.dart';
 import 'package:portfolio/frosted_glass.dart';
+import 'package:portfolio/ios/entry.dart';
 import 'package:portfolio/macOS/dock.dart';
 import 'package:portfolio/macOS/store.dart';
 import 'package:portfolio/windows/entry.dart';
@@ -574,7 +575,7 @@ class _MacHomeState extends State<MacHome> {
                     child: Column(
                       children: [
                         Image(
-                          image: const AssetImage('assets/icons/projects.png'),
+                          image: const AssetImage('assets/mac/store.png'),
                           width: Screenwidth * 0.03,
                         ),
                         SizedBox(
@@ -669,7 +670,7 @@ class _MacHomeState extends State<MacHome> {
                       ],
                     ),
                   ),
-                 GestureDetector(
+                  GestureDetector(
                     onTap: () => {
                       setState(() {
                         _isfullscreen = !_isfullscreen;
@@ -719,6 +720,32 @@ class _MacHomeState extends State<MacHome> {
                         ),
                         Text(
                           'Windows Mode',
+                          style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: Screenheight * 0.02),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: Screenheight * 0.02,
+                  ),
+                  GestureDetector(
+                    onTap: () => {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const IosEntry()),
+                      ),
+                    },
+                    child: Column(
+                      children: [
+                        Image(
+                          image: const AssetImage('assets/mac/logo.png'),
+                          width: Screenwidth * 0.03,
+                        ),
+                        Text(
+                          'iOS Mode',
                           style: GoogleFonts.poppins(
                               color: Colors.white,
                               fontSize: Screenheight * 0.02),

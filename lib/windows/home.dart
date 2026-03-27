@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:html' as html;
 import 'package:intl/intl.dart';
 import 'package:portfolio/frosted_glass.dart';
+import 'package:portfolio/ios/entry.dart';
 import 'package:portfolio/macOS/entry.dart';
 import 'package:portfolio/windows/store.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -53,8 +54,7 @@ class _WindowsHomeState extends State<WindowsHome> {
                       child: Column(
                         children: [
                           Image(
-                            image:
-                                const AssetImage('assets/icons/projects.png'),
+                            image: const AssetImage('assets/windows/store.png'),
                             width: Screenwidth * 0.03,
                           ),
                           SizedBox(
@@ -207,6 +207,32 @@ class _WindowsHomeState extends State<WindowsHome> {
                         ],
                       ),
                     ),
+                    SizedBox(
+                      height: Screenheight * 0.02,
+                    ),
+                    GestureDetector(
+                      onTap: () => {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const IosEntry()),
+                        ),
+                      },
+                      child: Column(
+                        children: [
+                          Image(
+                            image: const AssetImage('assets/mac/logo.png'),
+                            width: Screenwidth * 0.03,
+                          ),
+                          Text(
+                            'iOS Mode',
+                            style: GoogleFonts.poppins(
+                                color: Colors.white,
+                                fontSize: Screenheight * 0.02),
+                          ),
+                        ],
+                      ),
+                    ),
                   ]),
                 ),
                 const Spacer(),
@@ -260,7 +286,7 @@ class _WindowsHomeState extends State<WindowsHome> {
                                     })
                               },
                               icon: Image.asset(
-                                'assets/icons/projects.png',
+                                'assets/windows/store.png',
                                 width: Screenwidth * 0.02,
                               ),
                             ),
