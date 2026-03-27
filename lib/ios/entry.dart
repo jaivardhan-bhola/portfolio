@@ -30,7 +30,7 @@ class _IosEntryState extends State<IosEntry> {
     });
 
     await ImageUtils.precacheImageSafe(
-      const AssetImage('assets/mac/bg_optimized.jpg'),
+      const AssetImage('assets/mac/bg_ios.png'),
       context,
     );
 

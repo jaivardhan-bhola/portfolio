@@ -137,7 +137,7 @@ class _IosHomeState extends State<IosHome> {
         height: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/mac/bg_optimized.jpg'),
+            image: AssetImage('assets/mac/bg_ios.png'),
             fit: BoxFit.cover,
           ),
         ),

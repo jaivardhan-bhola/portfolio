@@ -1,10 +1,10 @@
 # portfolio
 
-A new Flutter project.
+Personal portfolio website with macOS, Windows, and iOS-inspired web experiences.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a cross-platform Flutter web portfolio.
 
 A few resources to get you started if this is your first Flutter project:
 

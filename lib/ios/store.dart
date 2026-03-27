@@ -228,7 +228,7 @@ class _IosStoreState extends State<IosStore> {
           image: DecorationImage(
             image: AssetImage(
               project.icon.isEmpty
-                  ? 'assets/mac/bg_optimized.jpg'
+                  ? 'assets/mac/bg_ios.png'
                   : project.icon,
             ),
             fit: BoxFit.cover,
