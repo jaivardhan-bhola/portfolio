@@ -13,6 +13,26 @@ class IosHome extends StatefulWidget {
 
 class _IosHomeState extends State<IosHome> {
   bool _fullscreen = false;
+  late String _currentTime;
+
+  @override
+  void initState() {
+    super.initState();
+    final DateTime now = DateTime.now();
+    _currentTime = '${now.hour}:${now.minute.toString().padLeft(2, '0')}';
+    _updateTimePeriodically();
+  }
+
+  void _updateTimePeriodically() {
+    Future<void>.delayed(const Duration(minutes: 1), () {
+      if (!mounted) return;
+      final DateTime now = DateTime.now();
+      setState(() {
+        _currentTime = '${now.hour}:${now.minute.toString().padLeft(2, '0')}';
+      });
+      _updateTimePeriodically();
+    });
+  }
 
   static const List<_HomeIcon> _topIcons = <_HomeIcon>[
     _HomeIcon(
@@ -152,7 +172,7 @@ class _IosHomeState extends State<IosHome> {
                 child: Row(
                   children: <Widget>[
                     Text(
-                      '9:41',
+                      _currentTime,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: screenHeight * 0.022,
